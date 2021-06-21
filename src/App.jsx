@@ -20,8 +20,8 @@ function App() {
   return (
     <ThemeProvider theme={themeMode}>
       <>
-        <Toggler theme={theme} toggleTheme={themeToggler} />
         <GlobalStyles />
+        <Toggler theme={theme} toggleTheme={themeToggler} />
         <Header />
         <Certifications />
         <Contact />
