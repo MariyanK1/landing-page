@@ -8,6 +8,7 @@ interface PropsInterface {
 
 function Contact() {
   const { header, email }: PropsInterface = data.contact;
+
   return (
     <div className="contact-container">
       <h1>{header}</h1>

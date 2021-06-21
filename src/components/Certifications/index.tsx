@@ -9,6 +9,7 @@ interface PropsInterface {
 
 function Certifications() {
   const { header, titles, links }: PropsInterface = data.certifications;
+
   return (
     <div className="certifications-container">
       <h1>{header}</h1>

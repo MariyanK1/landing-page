@@ -10,6 +10,7 @@ interface PropsInterface {
 
 function Header() {
   const { skills, image, title, paragraphs }: PropsInterface = data.header;
+
   return (
     <div className="header-container">
       <h1>{title}</h1>
