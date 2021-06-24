@@ -19,12 +19,32 @@ function Projects() {
         return (
           <div key={x}>
             <p>{x}:</p>
-            <a href={liveLinks[i]} target="_blank" rel="noopener noreferrer">
-              Live
-            </a>
-            <a href={sourceLinks[i]} target="_blank" rel="noopener noreferrer">
-              Source
-            </a>
+            {x === "Vanilla JS NodeJS API (WIP)" ? (
+              <a
+                href={sourceLinks[i]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source
+              </a>
+            ) : (
+              <>
+                <a
+                  href={liveLinks[i]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live
+                </a>
+                <a
+                  href={sourceLinks[i]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source
+                </a>
+              </>
+            )}
           </div>
         );
       })}
