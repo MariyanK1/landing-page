@@ -59,6 +59,7 @@ const data: DataInterface = {
   projects: {
     header: "My Projects:",
     titles: [
+      "Dating App",
       "Vanilla JS NodeJS API (WIP)",
       "React With Typescript",
       "Github Finder",
@@ -68,6 +69,7 @@ const data: DataInterface = {
       "Meal Finder",
     ],
     liveLinks: [
+      "https://dating-app-m.netlify.app/",
       "#",
       "https://react-with-typescript.netlify.app/",
       "https://github-find3r.netlify.app/",
@@ -77,6 +79,7 @@ const data: DataInterface = {
       "https://mariyank1.github.io/meal-finder/",
     ],
     sourceLinks: [
+      "https://github.com/MariyanK1/dating-app",
       "https://github.com/MariyanK1/Vanilla-NodeJS-REST-API",
       "https://github.com/MariyanK1/React-With-Typescript",
       "https://github.com/MariyanK1/Github-Finder",
