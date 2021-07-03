@@ -15,13 +15,13 @@ function Projects() {
   return (
     <div className="projects-container">
       <h1>{header}</h1>
-      {titles.map((x, i) => {
+      {titles.map((title, idx) => {
         return (
-          <div key={x}>
-            <p>{x}:</p>
-            {x === "Vanilla JS NodeJS API (WIP)" ? (
+          <div key={title}>
+            <p>{title}:</p>
+            {title === "Vanilla JS NodeJS API (WIP)" ? (
               <a
-                href={sourceLinks[i]}
+                href={sourceLinks[idx]}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -30,14 +30,14 @@ function Projects() {
             ) : (
               <>
                 <a
-                  href={liveLinks[i]}
+                  href={liveLinks[idx]}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Live
                 </a>
                 <a
-                  href={sourceLinks[i]}
+                  href={sourceLinks[idx]}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

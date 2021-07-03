@@ -13,11 +13,11 @@ function Certifications() {
   return (
     <div className="certifications-container">
       <h1>{header}</h1>
-      {links.map((x, i) => {
+      {links.map((link, idx) => {
         return (
-          <div key={x}>
-            <a href={x} target="_blank" rel="noreferrer">
-              {titles[i]}
+          <div key={link}>
+            <a href={link} target="_blank" rel="noreferrer">
+              {titles[idx]}
             </a>
           </div>
         );

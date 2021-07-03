@@ -23,9 +23,9 @@ function App() {
         <GlobalStyles />
         <Toggler theme={theme} toggleTheme={themeToggler} />
         <Header />
+        <Projects />
         <Certifications />
         <Contact />
-        <Projects />
         <FooterImage />
       </>
     </ThemeProvider>

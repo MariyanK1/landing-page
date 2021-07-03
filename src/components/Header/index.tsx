@@ -15,8 +15,8 @@ function Header() {
     <div className="header-container">
       <h1>{title}</h1>
       <img src={image} alt="" />
-      {paragraphs.map((x) => (
-        <p key={x}>{x}</p>
+      {paragraphs.map((paragraph) => (
+        <p key={paragraph}>{paragraph}</p>
       ))}
       <b>{skills}</b>
     </div>
