@@ -25,7 +25,6 @@ interface DataInterface {
   };
   projects: {
     titles: string[];
-    liveLinks: string[];
     sourceLinks: string[];
     header: string;
   };
@@ -66,10 +65,6 @@ const data: DataInterface = {
   projects: {
     header: "My Projects:",
     titles: ["Github Finder", "Crypto Market"],
-    liveLinks: [
-      "https://github-find3r.netlify.app/",
-      "https://crypto-market-x.netlify.app/",
-    ],
     sourceLinks: [
       "https://github.com/MariyanK1/Github-Finder",
       "https://github.com/MariyanK1/Crypto-Market",
