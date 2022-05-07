@@ -1,7 +1,16 @@
+import {
+  Angular,
+  Node,
+  HTML,
+  CSS,
+  React,
+  Mongo,
+  TypeScript,
+} from "../assets/icons/";
+
 interface DataInterface {
   header: {
-    skills: string;
-    image: string;
+    skills: string[];
     title: string;
     paragraphs: string[];
   };
@@ -24,14 +33,12 @@ interface DataInterface {
 
 const data: DataInterface = {
   header: {
-    skills: "HTML5, CSS/SCSS, JS, REACT",
+    skills: [Angular, Node, HTML, CSS, React, Mongo, TypeScript],
     title: "Mariyan Maksimov's Project Page",
-    image: "https://avatars.githubusercontent.com/u/58628678?v=4",
     paragraphs: [
       "Welcome to my page! Thanks for stopping by.",
-      "I'm a partially self-taught developer with a passion for the Web.",
+      "I'm a problem-solver with a passion for the Web.",
       "Fascinated by JavaScript and its quirks.",
-      "Currently looking for a Jr. Frontend position or Internship.",
       "My skills are:",
     ],
   },
@@ -58,35 +65,14 @@ const data: DataInterface = {
   },
   projects: {
     header: "My Projects:",
-    titles: [
-      "Dating App",
-      "Vanilla JS NodeJS API (WIP)",
-      "React With Typescript",
-      "Github Finder",
-      "Crypto Market",
-      "New Year Countdown",
-      "Binary Search",
-      "Meal Finder",
-    ],
+    titles: ["Github Finder", "Crypto Market"],
     liveLinks: [
-      "https://dating-app-m.netlify.app/",
-      "#",
-      "https://react-with-typescript.netlify.app/",
       "https://github-find3r.netlify.app/",
       "https://crypto-market-x.netlify.app/",
-      "https://mariyank1.github.io/new-year-countdown/",
-      "https://mariyank1.github.io/binary-search/",
-      "https://mariyank1.github.io/meal-finder/",
     ],
     sourceLinks: [
-      "https://github.com/MariyanK1/dating-app",
-      "https://github.com/MariyanK1/Vanilla-NodeJS-REST-API",
-      "https://github.com/MariyanK1/React-With-Typescript",
       "https://github.com/MariyanK1/Github-Finder",
       "https://github.com/MariyanK1/Crypto-Market",
-      "https://github.com/MariyanK1/mariyank1.github.io/tree/main/new-year-countdown",
-      "https://github.com/MariyanK1/mariyank1.github.io/tree/main/binary-search/",
-      "https://github.com/MariyanK1/mariyank1.github.io/tree/main/meal-finder",
     ],
   },
 };

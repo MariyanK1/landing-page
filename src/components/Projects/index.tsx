@@ -14,37 +14,27 @@ function Projects() {
 
   return (
     <div className="projects-container">
-      <h1>{header}</h1>
+      <h1 style={{ marginBottom: "30px" }}>{header}</h1>
       {titles.map((title, idx) => {
         return (
-          <div key={title}>
-            <p>{title}:</p>
-            {title === "Vanilla JS NodeJS API (WIP)" ? (
+          <div key={title} className="project-wrapper">
+            <h5>{title + ":"}</h5>
+            <div className="button-container">
+              <a
+                href={liveLinks[idx]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Live</button>
+              </a>
               <a
                 href={sourceLinks[idx]}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Source
+                <button>Source</button>
               </a>
-            ) : (
-              <>
-                <a
-                  href={liveLinks[idx]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live
-                </a>
-                <a
-                  href={sourceLinks[idx]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Source
-                </a>
-              </>
-            )}
+            </div>
           </div>
         );
       })}
