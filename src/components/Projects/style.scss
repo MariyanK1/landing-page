@@ -8,26 +8,16 @@
     gap: 1em;
     padding: 0.7em;
 
-    .button-container {
+    .links-container {
       display: flex;
       gap: 0.6em;
 
       a {
         background-color: black;
-        padding: 2em;
-        border: none;
-        margin: 0;
+        padding: 0.3em;
         text-decoration: none;
-
-        button {
-          color: white;
-          background-color: black;
-          padding: 2em;
-          border: none;
-          margin: 0;
-          text-decoration: none;
-          cursor: pointer;
-        }
+        border-radius: 3px;
+        color: white;
       }
     }
   }

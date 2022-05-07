@@ -19,20 +19,20 @@ function Projects() {
         return (
           <div key={title} className="project-wrapper">
             <h5>{title + ":"}</h5>
-            <div className="button-container">
+            <div className="links-container">
               <a
                 href={liveLinks[idx]}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button>Live</button>
+                Live
               </a>
               <a
                 href={sourceLinks[idx]}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button>Source</button>
+                Source
               </a>
             </div>
           </div>
