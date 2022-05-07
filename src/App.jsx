@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes";
 import Toggler from "./components/Toggler";
@@ -27,7 +26,6 @@ function App() {
         <Projects />
         <Certifications />
         <Contact />
-        <Footer />
       </div>
     </ThemeProvider>
   );

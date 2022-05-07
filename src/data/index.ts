@@ -60,7 +60,7 @@ const data: DataInterface = {
     ],
   },
   contact: {
-    header: "Contact me:",
+    header: "Let's chat!",
     email: "mariyan.pickup@gmail.com",
   },
   projects: {
