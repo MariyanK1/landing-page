@@ -39,7 +39,7 @@ const data: DataInterface = {
   },
   projects: {
     header: "My Projects:",
-    titles: ["Instagram Clone", "Github Finder", "Crypto Market"],
+    titles: ["Instagram Clone", "Github Finder (live)", "Crypto Market (live)"],
     sourceLinks: [
       "https://github.com/MariyanK1/full-stack-instagram-clone",
       "https://github.com/MariyanK1/Github-Finder",
