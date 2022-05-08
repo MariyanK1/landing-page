@@ -1,14 +1,11 @@
+import { ReactElement } from "react";
+
 import data from "../../data";
+import { PropsHeaderInterface } from "../../interfaces";
 import "./style.scss";
 
-interface PropsInterface {
-  skills: string[];
-  paragraphs: string[];
-  title: string;
-}
-
-function Header() {
-  const { skills, title, paragraphs }: PropsInterface = data.header;
+function Header(): ReactElement {
+  const { skills, title, paragraphs }: PropsHeaderInterface = data.header;
 
   return (
     <div className="header-container">
@@ -26,9 +23,11 @@ function Header() {
         ))}
       </div>
       <div className="skills-container">
-        {skills.map((x) => {
-          return <img src={x} key={x} alt="Skill icons" />;
-        })}
+        {skills
+          .sort(() => Math.random() - 0.5)
+          .map((x) => {
+            return <img src={x} key={x} alt="Skill icons" />;
+          })}
       </div>
     </div>
   );

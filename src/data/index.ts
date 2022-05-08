@@ -8,38 +8,13 @@ import {
   TypeScript,
 } from "../assets/icons/";
 
-interface DataInterface {
-  header: {
-    skills: string[];
-    title: string;
-    paragraphs: string[];
-  };
-  certifications: {
-    titles: string[];
-    links: string[];
-    header: string;
-  };
-  contact: {
-    header: string;
-    email: string;
-  };
-  projects: {
-    titles: string[];
-    sourceLinks: string[];
-    header: string;
-  };
-}
+import { DataInterface } from "../interfaces";
 
 const data: DataInterface = {
   header: {
     skills: [Angular, Node, HTML, CSS, React, Mongo, TypeScript],
     title: "Mariyan Maksimov's Project Page",
-    paragraphs: [
-      "Welcome to my page! Thanks for stopping by.",
-      "I'm a problem-solver with a passion for the Web.",
-      "Fascinated by JavaScript and its quirks.",
-      "My skills are:",
-    ],
+    paragraphs: ["My stack:"],
   },
   certifications: {
     header: "Certifications:",
@@ -64,8 +39,9 @@ const data: DataInterface = {
   },
   projects: {
     header: "My Projects:",
-    titles: ["Github Finder", "Crypto Market"],
+    titles: ["Instagram Clone", "Github Finder", "Crypto Market"],
     sourceLinks: [
+      "https://github.com/MariyanK1/full-stack-instagram-clone",
       "https://github.com/MariyanK1/Github-Finder",
       "https://github.com/MariyanK1/Crypto-Market",
     ],

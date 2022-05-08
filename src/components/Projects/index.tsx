@@ -1,14 +1,12 @@
+import { ReactElement } from "react";
+
+import { PropsProjectInterface } from "../../interfaces";
 import data from "../../data";
+
 import "./style.scss";
 
-interface PropsInterface {
-  sourceLinks: string[];
-  titles: string[];
-  header: string;
-}
-
-function Projects() {
-  const { sourceLinks, titles, header }: PropsInterface = data.projects;
+function Projects(): ReactElement {
+  const { sourceLinks, titles, header }: PropsProjectInterface = data.projects;
 
   return (
     <div className="projects-container">

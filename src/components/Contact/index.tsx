@@ -1,13 +1,12 @@
+import { ReactElement } from "react";
+
 import data from "../../data";
+import { PropsContactInterface } from "../../interfaces";
+
 import "./style.scss";
 
-interface PropsInterface {
-  header: string;
-  email: string;
-}
-
-function Contact() {
-  const { header, email }: PropsInterface = data.contact;
+function Contact(): ReactElement {
+  const { header, email }: PropsContactInterface = data.contact;
 
   return (
     <div className="contact-container">
