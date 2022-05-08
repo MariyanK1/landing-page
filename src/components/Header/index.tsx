@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 
 import data from "../../data";
 import { PropsHeaderInterface } from "../../interfaces";
+
 import "./style.scss";
 
 function Header(): ReactElement {

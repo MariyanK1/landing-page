@@ -1,6 +1,8 @@
 import { ReactElement } from "react";
+
 import data from "../../data";
 import { PropsCertificatesInterface } from "../../interfaces";
+
 import "./style.scss";
 
 function Certifications(): ReactElement {
