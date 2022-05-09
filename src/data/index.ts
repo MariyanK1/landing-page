@@ -6,13 +6,14 @@ import {
   React,
   Mongo,
   TypeScript,
+  ES6,
 } from "../assets/icons/";
 
 import { DataInterface } from "../interfaces";
 
 const data: DataInterface = {
   header: {
-    skills: [Angular, Node, HTML, CSS, React, Mongo, TypeScript],
+    skills: [Angular, Node, HTML, CSS, React, Mongo, TypeScript, ES6],
     title: "Mariyan Maksimov's Project Page",
     paragraphs: ["My stack:"],
   },
