@@ -41,7 +41,7 @@ const data: DataInterface = {
   projects: {
     header: "My Projects:",
     titles: [
-      "Public Library (live)",
+      "Public Library",
       "Instagram Clone",
       "Github Finder (live)",
       "Crypto Market (live)",
